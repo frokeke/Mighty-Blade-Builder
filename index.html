@@ -2,14 +2,50 @@
 Gerador de fichas de Mighty Blade com funcionamento inspirado no C.R.I.S (eu espero)
 -->
 
-<DOCTYPE html> 
-   <html lang="pt-br"> 
-       <head> 
-       <meta charset="UTF-8"> 
-       <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-           <title>Teste</title> 
-       </head> 
-       <body> 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Criador e gerenciador de personagens de Mighty Blade.">
+    <title>Mighty Blade</title>
+    <!--link rel="stylesheet" href="css/styles.css"> Ainda não implementado-->
+    <script type="module" src="js/app.js"></script>
+</head>
+<body>
+    <header id="main-header">
+        <h1>Mighty Blade</h1>
+        <nav id="main-navigation">
+            <a href="#dashboard">Início</a>
+            <a href="#personagens">Personagens</a>
+            <a href="#criar-personagem">Criar personagem</a>
+        </nav>
+    </header>
+    <main id="main-content">
+        <section id="dashboard">
+            <h2 id="dashboard-title">Painel principal</h2>
+            <p>
+                [TEMPLATE_MESSAGE] Mensagem de boas vindas.
+            </p>
+        </section>
 
-       </body> 
-   </html> 
+        <section id="personagens">
+            <h2 id="personagens-titulo">Meus personagens</h2>
+            <div id="personagens-lista">
+                <p id="personagens-vazio">
+                    [TEMPLATE_MESSAGE] Ta vazio.
+                </p>
+            </div>
+        </section>
+        <section id="criacao-personagem">
+            <h2 id="criacao-personagem-titulo">
+                [TEMPLATE_MESSAGE] Criação de personagem
+            </h2>
+            <p>
+                [TEMPLATE_MESSAGE] Área de criação de personagem.
+            </p>
+        </section>
+    </main>
+</body>
+
+</html>
